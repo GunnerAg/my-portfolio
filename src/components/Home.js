@@ -30,26 +30,32 @@ export default function Home() {
         console.log('NODE',nodeArr.length)
 
         const changeTxt0=(i)=>{
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             setIntro(introduction=introductionArr.slice(0,i).join(''))
         }
 
         const changeTxt01=(i)=>{
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             setIntro2(introduction2=introduction2Arr.slice(0,i-97).join(''))
         }
 
         const changeTxt1=(i)=>{
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             setMongo(mongo=mongoArr.slice(0,i-235).join(''))
         }
 
         const changeTxt2=(i)=>{
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             setExpress(express=expressArr.slice(0,i-242).join(''))
         }
 
         const changeTxt3=(i)=>{
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             setReact(react=reactArr.slice(0,i-249).join(''))
         }
 
         const changeTxt4=(i)=>{
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             setNode(node=nodeArr.slice(0,i-257).join(''))
         }
  

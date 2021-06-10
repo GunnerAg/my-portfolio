@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import NavBar from './NavBar'
 import myCv from '../myCV.pdf'
@@ -6,13 +6,6 @@ import '../styles/About.scss'
 
 
 export default function About() {
-
-    const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
-  
-    function onDocumentLoadSuccess({ numPages }) {
-      setNumPages(numPages);
-    }
 
     const pageWidth=()=>{
       if(window.innerWidth<=1400){
@@ -25,8 +18,8 @@ export default function About() {
     return (
         <div className="about__main--container">
              <div className="about--navbar"><NavBar /></div>
-                <Document renderMode="canvas" className="about--pdf-container" file={myCv} onLoadSuccess={onDocumentLoadSuccess}>
-                    <Page pageNumber={pageNumber} width={pageWidth()} className="about--pdf-page"/>
+                <Document renderMode="canvas" className="about--pdf-container" file={myCv} >
+                    <Page pageNumber={1} width={pageWidth()} className="about--pdf-page"/>
                     <a href={myCv} download="Gunner-Andersen-CV.pdf" className="about--download-button">DOWNLOAD</a>
                 </Document>
 
