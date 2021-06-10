@@ -1,0 +1,149 @@
+.projects__main--container{
+    font-family: 'Source Code Pro', monospace;
+    font-size: calc(16px + 3vw);
+    font-weight: 900;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.projects--navbar{
+    z-index: 10;
+}
+
+.projects__main--background{
+    background-color: whitesmoke;
+    height: fit-content;
+}
+
+.projects__grid--container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 10%;
+}
+
+.projects__grid--unit-title{
+    font-family: 'Source Code Pro', monospace;
+    font-size: calc(16px + 1vw);
+    text-align: center;
+    margin-top: 5%;
+    font-weight: 900;
+}
+
+.projects__grid--unit{
+    height: 40vh;
+    width: 50vw;
+    -webkit-box-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.4);  
+    -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+}
+
+.slcocilux{
+    background-image: url(https://res.cloudinary.com/sl-cocilux/image/upload/v1622451678/4_IMAGEN_PRINCIPAL_1_cmdiez.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.theVault{
+    background-image: url("../theVault.png");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nftERC{
+    background-image: url("../nftERC.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jobber{
+    background-image: url("../jobber.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects__grid--unit-description{
+    font-family: 'Source Code Pro', monospace;
+    font-size: calc(8px + 1vw);
+    font-weight: 900;
+    position: absolute;
+    z-index: 10;
+    height: 40vh;
+    width: 40vw;
+    margin-left: 5vw;
+    margin-top: -40vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:solid red 2px
+}
+
+.projects__grid--unit-link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 3%;
+    border: solid white 2px;
+    border-radius: 10px;
+    font-size: calc(10px + 1vw);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.projects__grid--unit-container{
+    height: 40vh;
+    margin-bottom: 6%;
+    margin-top: 3%;
+}
+
+.white{
+    color: whitesmoke;
+}
+
+.hover{
+    filter:contrast(0.3) brightness(0.3)
+}
+
+@media screen and (max-width:1324px) {
+    .projects__grid--unit{
+        height: 30vh;
+        width: 80vw;
+    }
+
+    .projects__grid--unit-description{
+        height: 30vh;
+        width: 70vw;
+        margin-left: 5vw;
+        margin-top: -30vh;
+    }
+
+    .projects__grid--unit-container{
+        height: 30vh;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width:600px) {  
+    .jobber{
+        background-image: url("../jobber2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: rgb(21, 180, 176);
+    }
+}

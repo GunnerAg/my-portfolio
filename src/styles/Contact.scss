@@ -1,0 +1,155 @@
+.contact{
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    background: whitesmoke;
+  }
+
+  .contact--navbar{
+    z-index: 10;
+}
+  
+  .contact__header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    background: black;
+    height: fit-content;
+    height: 15vh;
+  }
+  
+  .contact__header-content{
+    color: whitesmoke;
+    margin-left: 5vw;
+    font-size: calc(3vw + 15px);
+    font-weight: 200;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+  }
+  
+  .contact__inner-content{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: fit-content;
+    min-height: 85vh;
+    background-color: whitesmoke;
+  }
+  
+  .contact__details{
+    width: 50vw;
+    height: fit-content;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 3%;
+    background-color: whitesmoke;
+  }
+
+  .contact__details-paragraph--one{
+    font-size: calc(16px + 0.5vw);
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    margin:5%;
+  }
+
+  .contact__details-list{
+    font-size: calc(8px + 1vw);
+  }
+
+  .contact__details-list--element{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 3%;
+      margin-top: 5%;
+      align-items: center;
+      width: fit-content;
+  }
+
+  .contact__details-list--bold{
+    font-weight: 700;
+  }
+
+  
+.contact__form-container{
+  display: flex;
+  align-items: center;
+  width: 50vw;
+}
+
+.contact__middle-bar{
+  background: black;
+  border: solid black 3px;
+  border-radius: 5px;
+  width: 3px;
+  height: 45vh;
+  position: absolute;
+  bottom: 25vh;
+  margin-left: calc(50% - 3px);
+  z-index: 1;
+}
+
+.contact__details--sent{
+  font-size: calc(3vw + 15px);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  font-family: 'Source Code Pro', monospace;
+  font-size: calc(16px + 0.5vw);
+  color:black;
+  font-weight: 900;
+}
+
+.contact__details-logo{
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 1024px){
+  .contact__inner-content{
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      height: fit-content;
+  }
+
+  .contact__details{
+      min-width: 100vw;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+  .contact__middle-bar{
+      display: none;
+  }
+
+  .contact__form-container{
+      width: 90vw;
+      height: fit-content;
+      padding-bottom: 2%;
+      padding-right: 5%;
+      padding-left: 5%;
+      padding-top: 2%;
+  }
+  
+  .contact__details--sent{
+    font-size: calc(3vw + 15px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 40vh;
+    height: fit-content;
+    font-size: calc(16px + 1vw);
+    background-color: whitesmoke;
+    font-family: 'Source Code Pro', monospace;
+    color:black;
+    font-weight: 900;
+  }
+  
+}
