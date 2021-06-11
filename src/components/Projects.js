@@ -8,27 +8,27 @@ const IMAGES = [
     {
         id: 0,
         url:
-        'https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1622451678/4_IMAGEN_PRINCIPAL_1_cmdiez.png'
+        'https://res.cloudinary.com/sl-cocilux/image/upload/v1622451678/4_IMAGEN_PRINCIPAL_1_cmdiez.png'
     },
     {
         id: 1,
         url:
-        'https://res.cloudinary.com/gunnerag/image/upload/f_auto/v1623420608/nftERC_ahrb0e.jpg'
+        'https://res.cloudinary.com/gunnerag/image/upload/v1623420608/nftERC_ahrb0e.jpg'
     },
     {
         id: 2,
         url:
-        'https://res.cloudinary.com/gunnerag/image/upload/f_auto/v1623420607/theVault_puxtsk.png'
+        'https://res.cloudinary.com/gunnerag/image/upload/v1623420607/theVault_puxtsk.png'
     },
     {
         id: 3,
         url:
-        'https://res.cloudinary.com/gunnerag/image/upload/f_auto/v1623420609/jobber_tvnayq.png'
+        'https://res.cloudinary.com/gunnerag/image/upload/v1623420609/jobber_tvnayq.png'
     },
     {
         id: 4,
         url:
-        'https://res.cloudinary.com/gunnerag/image/upload/f_auto/v1623420610/jobber2_lxrc1e.png'
+        'https://res.cloudinary.com/gunnerag/image/upload/v1623420610/jobber2_lxrc1e.png'
     },
 ]
 
