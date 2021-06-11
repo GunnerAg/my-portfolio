@@ -1,0 +1,6 @@
+Options -MultiViews
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.html [QSA,L]
+    RewriteCond %{HTTPS_HOST} ^www.gunnerandersen.com [NC]
+    RewriteRule ^(.*)$ https://www.gunnerandersen.com/$1 [L,R=301]
