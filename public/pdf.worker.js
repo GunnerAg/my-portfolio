@@ -1,3 +1,7 @@
+import { pdfjs } from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+
 /**
  * @licstart The following is the entire license notice for the
  * Javascript code in this page
@@ -19,6 +23,7 @@
  * @licend The above is the entire license notice for the
  * Javascript code in this page
  */
+ 
 
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
