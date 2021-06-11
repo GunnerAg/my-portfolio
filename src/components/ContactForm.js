@@ -56,7 +56,7 @@ export default function ContactForm({sendStatus,setFormStatus}) {
       }, (error) => {
           console.log(error.text);
       });
-      setFormStatus(true);
+      setFormStatus(sendStatus=true);
     }
   }
 

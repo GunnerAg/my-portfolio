@@ -21,7 +21,7 @@ export default function NavBar() {
 
             <div  className="navbar--content-container">
                 <Link to='/' className="navBar__link">
-                    <div className="navbar--content" >Console</div>
+                    <div className="navbar--content" >Home</div>
                 </Link>
                 <Link to='/projects' className="navBar__link">
                 <div className="navbar--content">Projects</div>

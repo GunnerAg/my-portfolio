@@ -17,7 +17,11 @@ export default function About() {
   
     return (
         <div className="about__main--container">
-             <div className="about--navbar"><NavBar /></div>
+         <div className="about--navbar"><NavBar /></div>
+                <div className="contact__header"> 
+                    <h5 className="contact__header-content">About</h5>
+                </div>
+            <div className="about__content-container">
                 <Document renderMode="canvas" className="about--pdf-container" file={process.env.PUBLIC_URL + '/myCV.pdf'} >
                     <Page pageNumber={1} width={pageWidth()} className="about--pdf-page"/>
                     <a href={process.env.PUBLIC_URL + '/myCV.pdf'} download="Gunner-Andersen-CV.pdf" className="about--download-button">DOWNLOAD</a>
@@ -38,6 +42,7 @@ export default function About() {
                     <br/><br/> If you compiled all the way down to this line, let me say thank you for reading!
                     </div>
                 </div>
+            </div>
         </div>
     )
 }
