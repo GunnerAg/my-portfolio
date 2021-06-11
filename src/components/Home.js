@@ -1,6 +1,17 @@
 import React,{useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
+import Spinner from 'react-bootstrap/Spinner'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/Home.scss'
+
+const IMAGES = [
+    {
+        id: 0,
+        url:
+        'https://res.cloudinary.com/gunnerag/image/upload/v1623404015/Kali_mkikjb.png'
+      },
+ 
+]
 
 export default function Home() {
     
@@ -13,8 +24,26 @@ export default function Home() {
     let [react, setReact] = useState('');
     let [node, setNode] = useState('');
     let [display, setDisplay] = useState([true,false,false,false,false,false]);
+    let [imgsLoaded, setImgsLoaded] = useState(false);
+
+
 
     useEffect(() => {
+
+        const loadImage = image => {
+            return new Promise((resolve, reject) => {
+              const loadImg = new Image()
+              loadImg.src = image.url
+              // wait 2 seconds to simulate loading time
+              loadImg.onload = () =>resolve(image.url)
+              loadImg.onerror = err => reject(err)
+            })
+          }
+      
+          Promise.all(IMAGES.map(image => loadImage(image)))
+            .then(() => setImgsLoaded(true))
+            .catch(err => console.log("Failed to load images", err))
+
         let introductionArr= Array.from("Hi there, I'm Gunner Andersen, a MERN web developer and Computer Science Bachelor's degree student.");
         let introduction2Arr= Array.from("What is the MERN stack? It is the set of frameworks, environments and libraries I use to build the front-end and the back-end of web apps.");
         let mongoArr=Array.from('MongoDB');
@@ -60,7 +89,7 @@ export default function Home() {
         }
  
         for (let i=0; i<=264; i++) {
-            task(i);
+            if(imgsLoaded===true){task(i)}
         }
  
         function task(i) {
@@ -73,7 +102,8 @@ export default function Home() {
              else if(i>=257){setDisplay([false,false,false,false,false,true]);changeTxt4(i)}
          }, 50 * i);
         } 
-    }, [])
+    }, [imgsLoaded])
+
 
     const ChangeNavBar=()=>{
         setTimeout(() => {
@@ -134,7 +164,9 @@ export default function Home() {
    }
 
     return (
-        <div className="home__container" style={{backgroundImage: 'url(/Kali.png)', minHeight: window.innerHeight}}>
+        <>
+        {imgsLoaded ?
+        <div className="home__container" style={{backgroundImage:`url(${IMAGES[0].url})`, minHeight:'100vh'}}>
             <div className="home__kali--icons">
                 <div className="home__kali--icons-bar"></div>
                 <div className="home__kali--icons-square"></div>
@@ -144,24 +176,24 @@ export default function Home() {
             <br/><br/>
             <div className="home__kali--navBar">
                
-                    {fakeNav? <div className="navBar__link navBlink">File</div>:
+                    {fakeNav? <div className="navBar__link-fake navBlink">File</div>:
                     <Link to='/' className="navBar__link">
                         <div>Home</div>
                     </Link>}
                
-                    {fakeNav? <div className="navBar__link navBlink">Actions</div>:
+                    {fakeNav? <div className="navBar__link-fake navBlink">Actions</div>:
                     <Link to='/projects' className="navBar__link">
                         <div>Projects</div>
                     </Link>}
                
                 
-                    {fakeNav? <div className="navBar__link navBlink">Edit</div>:
+                    {fakeNav? <div className="navBar__link-fake navBlink">Edit</div>:
                     <Link to='/about' className="navBar__link">
                         <div>About</div>
                     </Link>}
                
                 
-                    {fakeNav? <div className="navBar__link navBlink" >View<div style={window.innerWidth>1024? {display:'inline', marginLeft: '45px'}:{display:'inline', marginLeft: '10px'}}>Help</div></div>:
+                    {fakeNav? <div className="navBar__link-fake navBlink" >View<div style={window.innerWidth>1024? {display:'inline', marginLeft: '45px'}:{display:'inline', marginLeft: '10px'}}>Help</div></div>:
                     <Link to='/contact' className="navBar__link">
                         <div>Contact</div>
                     </Link>}
@@ -185,5 +217,11 @@ export default function Home() {
 
 
         </div>
+        :
+        <div className="home--loading">
+        LOADING
+        <Spinner animation="border" variant="light"  role="status" style={{fontSize:'16px'}}/>
+        </div>}
+        </>
     )
 }

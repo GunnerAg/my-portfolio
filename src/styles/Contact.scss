@@ -14,18 +14,22 @@
     justify-content: flex-start;
     align-items: center;
     text-align: start;
-    background: black;
     height: fit-content;
-    height: 15vh;
   }
   
   .contact__header-content{
-    color: whitesmoke;
-    margin-left: 5vw;
-    font-size: calc(3vw + 15px);
-    font-weight: 200;
+    font-size: calc(16px + 3vw);
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
     margin-top: 2vh;
     margin-bottom: 3vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    width: 100%;
+    border-bottom:  black solid 4px;
+    -webkit-box-shadow:  12px 6px 6px rgba(0, 0, 0, 0.4);  
+    -moz-box-shadow:     12px 6px 6px rgba(0, 0, 0, 0.4);
+    box-shadow:   12px 6px 6px rgba(0, 0, 0, 0.4);
   }
   
   .contact__inner-content{
@@ -55,6 +59,9 @@
 
   .contact__details-list{
     font-size: calc(8px + 1vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact__details-list--element{
@@ -131,9 +138,8 @@
       width: 90vw;
       height: fit-content;
       padding-bottom: 2%;
-      padding-right: 5%;
-      padding-left: 5%;
       padding-top: 2%;
+      align-self: center;
   }
   
   .contact__details--sent{
@@ -150,6 +156,34 @@
     font-family: 'Source Code Pro', monospace;
     color:black;
     font-weight: 900;
+  }
+
+  .contact__details-list--element{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .contact__details-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(16px + 1vw);
+    padding-left: 0;
+  }
+
+  .contact__details-logo{
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact__details-paragraph--one{
+    text-align: center;
+    font-size: calc(16px + 1vw);
   }
   
 }

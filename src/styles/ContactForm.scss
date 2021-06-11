@@ -1,17 +1,19 @@
 .contact__form{
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
-    width: 90%;
+    text-align: center;
+    width: 100%;
     height: fit-content;
     margin:5%;
-    font-size: calc(10px + 0.7vw);
+    font-size: calc(16px + 0.5vw);
+    font-family: 'Source Code Pro', monospace;
 }
 .contact__form-input{
     border: none;
     background-color: rgba(128, 128, 128, 0.3);
     margin-bottom: 5%;
     font-size: calc(10px + 0.7vw);
+    font-family: 'Source Code Pro', monospace;
 }
 .contact__form-text--area{
     border: none;
@@ -19,9 +21,10 @@
     min-height: 10vh;
     height: fit-content;
     margin-bottom: 2%;
+    font-family: 'Source Code Pro', monospace;
 }
 .contact__form-button--enable{
-    font-size: calc(10px + 0.7vw);
+    font-size: calc(16px + 1vw);
     background: black;
     color: whitesmoke;
     border: black;
@@ -29,7 +32,9 @@
     display: block;
     margin:auto;
     height: fit-content;
-    width: 20%;
+    width: fit-content;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .contact__form-button--dissable{
