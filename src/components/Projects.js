@@ -209,8 +209,8 @@ export default function Projects() {
         
         <div className="projects__main--background">
             <div className="projects__main--container">
-                <div className="contact__header"> 
-                    <h5 className="contact__header-content">Projects</h5>
+                <div className="projects__header"> 
+                    <h5 className="projects__header-content">Projects</h5>
                 </div>
             </div>
             <ProjectsGrid/>

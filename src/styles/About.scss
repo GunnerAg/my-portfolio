@@ -1,12 +1,13 @@
-.projects__header{
+.about__header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     text-align: start;
     height: fit-content;
+    position: relative;
 }
   
-.projects__header-content{
+.about__header-content{
     font-size: calc(16px + 3vw);
     font-family: 'Source Code Pro', monospace;
     font-weight: 900;
@@ -46,6 +47,7 @@
 
 .about__main--container{
     background-color: whitesmoke;
+    position: relative;
 }
 
 .about__content-container{
