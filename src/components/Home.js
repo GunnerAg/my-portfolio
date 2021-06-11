@@ -8,7 +8,7 @@ const IMAGES = [
     {
         id: 0,
         url:
-        'https://res.cloudinary.com/gunnerag/image/upload/v1623404015/Kali_mkikjb.png'
+        'https://res.cloudinary.com/gunnerag/image/upload/f_auto/v1623404015/Kali_mkikjb.png'
       },
  
 ]
