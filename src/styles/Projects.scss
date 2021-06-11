@@ -52,6 +52,9 @@
 .projects__main--background{
     background-color: whitesmoke;
     height: fit-content;
+    position: relative;
+    width: 100vw;
+    z-index: -100;
 }
 
 .projects__grid--container{
