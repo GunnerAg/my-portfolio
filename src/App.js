@@ -5,8 +5,6 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
 
-import myCV from "./myCV.pdf";
-
 
 function App() {
 
@@ -24,7 +22,7 @@ function App() {
         }}/>
 
         <Route exact path="/about" render={()=>{
-          return <About myCV={myCV}/>
+          return <About />
         }}/>
 
         <Route exact path="/contact" render={()=>{

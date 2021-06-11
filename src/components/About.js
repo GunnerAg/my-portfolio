@@ -1,7 +1,7 @@
 import React from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 import NavBar from './NavBar';
-import myCV from '../myCV.pdf'
+import myCv from '../myCV.pdf'
 import '../styles/About.scss'
 
 
@@ -18,9 +18,9 @@ export default function About() {
     return (
         <div className="about__main--container">
              <div className="about--navbar"><NavBar /></div>
-                <Document renderMode="canvas" className="about--pdf-container" file="%PUBLIC_URL%/myCV.pdf">
+                <Document renderMode="canvas" className="about--pdf-container" file={myCv} >
                     <Page pageNumber={1} width={pageWidth()} className="about--pdf-page"/>
-                    <a href="%PUBLIC_URL%/myCV.pdf" download="Gunner-Andersen-CV.pdf" className="about--download-button">DOWNLOAD</a>
+                    <a href={myCv} download="Gunner-Andersen-CV.pdf" className="about--download-button">DOWNLOAD</a>
                 </Document>
 
                 <div className="about--info-container">
