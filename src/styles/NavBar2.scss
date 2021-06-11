@@ -1,0 +1,38 @@
+.NavBar2--container{
+    width: 100%;
+    height: fit-content;
+    background-color: whitesmoke;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.NavBar2--content-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.NavBar2__link{
+    text-decoration:none;
+    color: black;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.NavBar2__link:hover{
+    text-decoration:none;
+    color: black;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.NavBar2--content{
+    font-weight: 900;
+    font-family: 'Source Code Pro', monospace;
+    font-size: calc(7px + 1.5vw);
+    width: fit-content;
+    text-decoration:none;
+    color: black;
+}

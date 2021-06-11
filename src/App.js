@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
-import NavBar from './components/NavBar';
+import NavBar2 from './components/NavBar2';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-    {window.location.pathname==='/'?null:<NavBar/>}
+    {window.location.pathname==='/'?null:<NavBar2/>}
       <Switch>
 
         <Route exact path="/" render={()=>{

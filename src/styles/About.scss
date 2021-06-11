@@ -1,29 +1,6 @@
-.about__header{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: start;
-    height: fit-content;
-    position: relative;
-}
-  
-.about__header-content{
-    font-size: calc(16px + 3vw);
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 900;
-    margin-top: 2vh;
-    margin-bottom: 3vh;
-    padding-bottom: 3vh;
-    text-align: center;
-    width: 100%;
-    border-bottom:  black solid 4px;
-    -webkit-box-shadow:  12px 6px 6px rgba(0, 0, 0, 0.4);  
-    -moz-box-shadow:     12px 6px 6px rgba(0, 0, 0, 0.4);
-    box-shadow:   12px 6px 6px rgba(0, 0, 0, 0.4);
-}
 
 .about--pdf-container{ 
-    margin-top: 100px;
+    margin-top: 6%;
     margin-left: 5vw;
     display: flex;
     flex-direction: column;
@@ -38,11 +15,6 @@
     height: 80%;
     overflow: hidden;
     background-color: white;
-}
-
-.about--navbar{
-    z-index: 100;
-    position: fixed;
 }
 
 .about__main--container{

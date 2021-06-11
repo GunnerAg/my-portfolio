@@ -16,9 +16,6 @@ export default function About() {
   
     return (
         <div className="about__main--container">
-                <div className="about__header"> 
-                    <h5 className="about__header-content">About</h5>
-                </div>
             <div className="about__content-container">
                 <Document renderMode="canvas" className="about--pdf-container" file={process.env.PUBLIC_URL + '/myCV.pdf'} >
                     <Page pageNumber={1} width={pageWidth()} className="about--pdf-page"/>

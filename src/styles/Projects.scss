@@ -21,28 +21,6 @@
     align-items: center;
   }
 
-.projects__header{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: start;
-    height: fit-content;
-}
-  
-.projects__header-content{
-    font-size: calc(16px + 3vw);
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 900;
-    margin-top: 2vh;
-    margin-bottom: 3vh;
-    padding-bottom: 3vh;
-    text-align: center;
-    width: 100%;
-    border-bottom:  black solid 4px;
-    -webkit-box-shadow:  12px 6px 6px rgba(0, 0, 0, 0.4);  
-    -moz-box-shadow:     12px 6px 6px rgba(0, 0, 0, 0.4);
-    box-shadow:   12px 6px 6px rgba(0, 0, 0, 0.4);
-}
 
 .projects__main--background{
     background-color: whitesmoke;
@@ -64,7 +42,6 @@
     font-family: 'Source Code Pro', monospace;
     font-size: calc(16px + 1vw);
     text-align: center;
-    margin-top: 5%;
     font-weight: 900;
 }
 
@@ -75,6 +52,7 @@
     -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
     box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
     border-radius: 25px;
+    margin-bottom: 10%;
 }
 
 .slcocilux{
@@ -111,7 +89,7 @@
     height: 40vh;
     width: 40vw;
     margin-left: 5vw;
-    margin-top: -40vh;
+    margin-top: -50vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -133,6 +111,7 @@
 
 .projects__grid--unit-container{
     height: 40vh;
+    margin-bottom: 10%;
 }
 
 .white{
@@ -150,15 +129,15 @@
     }
 
     .projects__grid--unit-description{
-        height: 30vh;
+        height: 40vh;
         width: 70vw;
         margin-left: 5vw;
-        margin-top: -30vh;
+        margin-top: -40vh;
     }
 
     .projects__grid--unit-container{
         height: 30vh;
-        margin-bottom: 0%;
+        margin-bottom: 10%;
         margin-top: 0%;
     }
 }

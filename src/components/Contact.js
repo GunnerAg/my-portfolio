@@ -10,9 +10,6 @@ export default function Contact() {
         <>
         <div className="contact">
         <div className="contact__middle-bar"></div>
-        <div className="contact__header"> 
-            <h5 className="contact__header-content">Contact me!</h5>
-        </div>
         <div className="contact__inner-content">
             <div className="contact__details">
                 <p className="contact__details-paragraph--one">You can find links to my networks bellow, or just send me an email and I would replay as soon as posible!</p>
