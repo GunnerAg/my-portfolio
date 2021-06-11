@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from 'react'
-import NavBar from './NavBar'
 import Spinner from 'react-bootstrap/Spinner'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/Projects.scss'
@@ -209,7 +208,6 @@ export default function Projects() {
         
         
         <div className="projects__main--background">
-            <div className="projects--navbar"><NavBar/></div>
             <div className="projects__main--container">
                 <div className="contact__header"> 
                     <h5 className="contact__header-content">Projects</h5>

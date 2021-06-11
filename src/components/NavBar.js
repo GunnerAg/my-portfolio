@@ -12,6 +12,7 @@ export default function NavBar() {
         setNavDisplay(!navDisplay)
       }
 
+
     return (
         <div className={navDisplay? "navbar--main-container show":"navbar--main-container hide"}>
             <button className="navbar--button-display" onClick={handleOnclickNavBar}>

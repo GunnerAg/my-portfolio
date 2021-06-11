@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import NavBar from './NavBar'
 import ContactForm from './ContactForm';
 import '../styles/Contact.scss'
 
@@ -9,7 +8,6 @@ export default function Contact() {
 
     return (
         <>
-        <div className="contact-navbar"><NavBar/></div>
         <div className="contact">
         <div className="contact__middle-bar"></div>
         <div className="contact__header"> 

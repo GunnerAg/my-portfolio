@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from './NavBar';
 import '../styles/About.scss'
 import { Document, Page, pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -17,7 +16,6 @@ export default function About() {
   
     return (
         <div className="about__main--container">
-         <div className="about--navbar"><NavBar /></div>
                 <div className="contact__header"> 
                     <h5 className="contact__header-content">About</h5>
                 </div>
