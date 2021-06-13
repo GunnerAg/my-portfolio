@@ -7,28 +7,35 @@ import Contact from './components/Contact';
 import NavBar2 from './components/NavBar2';
 
 
-function App() {
 
+function App() {
 
   return (
     <div className="App">
     {window.location.pathname==='/'?null:<NavBar2/>}
       <Switch>
-
         <Route exact path="/" render={()=>{
-          return <Home />
+          return(
+              <Home/>
+            )
         }}/>
 
         <Route exact path="/projects" render={()=>{
-          return <Projects />
+            return(
+              <Projects/>
+            )
         }}/>
 
         <Route exact path="/about" render={()=>{
-          return <About />
+             return(
+              <About/>
+            )
         }}/>
 
         <Route exact path="/contact" render={()=>{
-          return <Contact />
+             return(
+              <Contact/>
+            )
         }}/>
 
       </Switch>
