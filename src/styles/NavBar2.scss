@@ -40,3 +40,27 @@
     text-decoration:none;
     color: whitesmoke;
 }
+
+@media screen and (max-width: 1024px){
+
+    .NavBar2--container{
+        width: 100%;
+        height: fit-content;
+        background-color: #123456;
+        min-height: 10vh;
+        height: fit-content;
+    }
+
+    
+    .NavBar2--content-container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        min-height: 10vh;
+        height: fit-content;
+    }
+
+    
+}

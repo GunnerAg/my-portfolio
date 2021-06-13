@@ -99,6 +99,17 @@
 }
 
 @media screen and (max-width: 1024px){
+
+  .contact{
+    width: 100vw;
+    min-height: 90vh;
+    height: fit-content;
+    background-color: #123456;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
   .contact__inner-content{
       display: flex;
       justify-content: flex-start;
