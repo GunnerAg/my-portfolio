@@ -1,9 +1,11 @@
 .contact{
-    width: 100%;
+    width: 100vw;
+    min-height: 80vh;
     height: fit-content;
-    min-height: 100vh;
-    background: whitesmoke;
+    background-color: #123456;
     position: relative;
+    display: flex;
+    align-items: center;
   }
   
   .contact__inner-content{
@@ -11,8 +13,7 @@
     justify-content: flex-start;
     flex-direction: row;
     height: fit-content;
-    min-height: 85vh;
-    background-color: whitesmoke;
+    background-color: #123456;
   }
   
   .contact__details{
@@ -21,14 +22,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 3%;
-    background-color: whitesmoke;
+    background-color: #123456;
   }
 
   .contact__details-paragraph--one{
     font-size: calc(16px + 0.5vw);
     font-family: 'Source Code Pro', monospace;
     font-weight: 900;
-    margin:5%;
+    margin-left:5%;
+    margin-right:5%;    
+    color:whitesmoke;
   }
 
   .contact__details-list{
@@ -36,6 +39,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color:whitesmoke;
+    
   }
 
   .contact__details-list--element{
@@ -45,10 +50,12 @@
       margin-top: 5%;
       align-items: center;
       width: fit-content;
+      
   }
 
   .contact__details-list--bold{
     font-weight: 700;
+    color:whitesmoke;
   }
 
   
@@ -56,16 +63,17 @@
   display: flex;
   align-items: center;
   width: 50vw;
+  height: fit-content;
 }
 
 .contact__middle-bar{
-  background: black;
-  border: solid black 3px;
+  background-color: #123456;
+  border: solid whitesmoke 3px;
   border-radius: 5px;
   width: 3px;
-  height: 45vh;
+  height: 40vh;
+  top: 35vh;
   position: absolute;
-  bottom: 25vh;
   margin-left: calc(50% - 3px);
   z-index: 1;
 }
@@ -78,10 +86,10 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: whitesmoke;
+  background-color: #123456;
   font-family: 'Source Code Pro', monospace;
   font-size: calc(16px + 0.5vw);
-  color:black;
+  color:whitesmoke;
   font-weight: 900;
 }
 
@@ -126,9 +134,9 @@
     min-height: 40vh;
     height: fit-content;
     font-size: calc(16px + 1vw);
-    background-color: whitesmoke;
+    background-color: #123456;
     font-family: 'Source Code Pro', monospace;
-    color:black;
+    color:whitesmoke;
     font-weight: 900;
   }
 
@@ -157,7 +165,7 @@
 
   .contact__details-paragraph--one{
     text-align: center;
-    font-size: calc(16px + 1vw);
+    font-size: calc(16px + 0.5vw);
   }
   
 }

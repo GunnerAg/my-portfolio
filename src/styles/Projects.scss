@@ -23,7 +23,7 @@
 
 
 .projects__main--background{
-    background-color: whitesmoke;
+    background-color: #123456;
     height: fit-content;
 }
 
@@ -43,6 +43,7 @@
     font-size: calc(16px + 1vw);
     text-align: center;
     font-weight: 900;
+    color:whitesmoke;
 }
 
 .projects__grid--unit{
@@ -53,6 +54,7 @@
     box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
     border-radius: 25px;
     margin-bottom: 10%;
+    border: solid whitesmoke 2px;
 }
 
 .slcocilux{
@@ -107,6 +109,15 @@
     font-size: calc(10px + 1vw);
     padding-left: 5%;
     padding-right: 5%;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.0);
+}
+
+.projects__grid--unit-link:hover{
+    text-decoration: none;
+    color: whitesmoke;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
 }
 
 .projects__grid--unit-container{

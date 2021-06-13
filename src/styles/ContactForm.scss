@@ -4,30 +4,34 @@
     text-align: center;
     width: 100%;
     height: fit-content;
-    margin:5%;
+    margin-left:5%;
+    margin-right:5%;
     font-size: calc(16px + 0.5vw);
     font-family: 'Source Code Pro', monospace;
+    color: whitesmoke;
 }
 .contact__form-input{
     border: none;
-    background-color: rgba(128, 128, 128, 0.3);
+    background-color: whitesmoke;
     margin-bottom: 5%;
     font-size: calc(10px + 0.7vw);
     font-family: 'Source Code Pro', monospace;
+    border-radius: 10px;
 }
 .contact__form-text--area{
     border: none;
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: whitesmoke;
     min-height: 10vh;
     height: fit-content;
     margin-bottom: 2%;
+    border-radius: 10px;
     font-family: 'Source Code Pro', monospace;
 }
 .contact__form-button--enable{
     font-size: calc(16px + 1vw);
-    background: black;
-    color: whitesmoke;
-    border: black;
+    background: whitesmoke;
+    color: black;
+    border: whitesmoke;
     border-radius: 5px;
     display: block;
     margin:auto;
@@ -41,7 +45,7 @@
     font-size: calc(10px + 0.7vw);
     background: red;
     color: whitesmoke;
-    border: black;
+    border: whitesmoke;
     border-radius: 5px;
     display: block;
     margin:auto;
