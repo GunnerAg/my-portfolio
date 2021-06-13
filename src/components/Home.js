@@ -114,7 +114,7 @@ export default function Home() {
                 <li className="home__introduction--list-element">
                     <div className="home__introduction--list-element-animated">
                         <div className={display[0]||display[1]? "home__introduction--list-element-icon-hide": "home__introduction--list-element-icon"}>
-                            <a href="https://www.mongodb.com/"><img className="home__introduction--list-element-icon-container" src="/Mongo.png" alt=""/></a>
+                            <a href="https://www.mongodb.com/"><img className="home__introduction--list-element-icon-container" src="https://res.cloudinary.com/gunnerag/image/upload/f_auto/v1623576705/Mongo_xksdxi.png" alt=""/></a>
                         </div>
                         &nbsp;
                         <div className="home__introduction--list-element-bar" >{mongo}</div>
@@ -124,7 +124,7 @@ export default function Home() {
                 <li className="home__introduction--list-element">
                     <div className="home__introduction--list-element-animated">
                         <div className={display[0]||display[1]||display[2]? "home__introduction--list-element-icon-hide": "home__introduction--list-element-icon"}>
-                            <a href="https://expressjs.com/" ><img className="home__introduction--list-element-icon-container express" src="/Express.png" alt=""/></a>
+                            <a href="https://expressjs.com/" ><img className="home__introduction--list-element-icon-container express" src="https://res.cloudinary.com/gunnerag/image/upload/f_auto/v1623576701/Express_luchfk.png" alt=""/></a>
                         </div>
                         &nbsp;
                         <div className="home__introduction--list-element-bar" >{express}</div>
@@ -134,7 +134,7 @@ export default function Home() {
                 <li className="home__introduction--list-element">
                     <div className="home__introduction--list-element-animated">
                         <div className={display[0]||display[1]||display[2]||display[3]? "home__introduction--list-element-icon-hide": "home__introduction--list-element-icon"}>
-                            <a href="https://es.reactjs.org/"><img className="home__introduction--list-element-icon-container" src="/React.png" alt=""/></a>
+                            <a href="https://es.reactjs.org/"><img className="home__introduction--list-element-icon-container" src="https://res.cloudinary.com/gunnerag/image/upload/f_auto/v1623576702/React_mm85gb.png" alt=""/></a>
                         </div>
                         &nbsp;
                         <div className="home__introduction--list-element-bar" >{react}</div>
@@ -144,7 +144,7 @@ export default function Home() {
                 <li className="home__introduction--list-element">
                     <div className="home__introduction--list-element-animated">
                         <div className={display[0]||display[1]||display[2]||display[3]||display[4]? "home__introduction--list-element-icon-hide": "home__introduction--list-element-icon"}>
-                            <a href="https://nodejs.org/"><img className="home__introduction--list-element-icon-container" src="/Node.png" alt=""/></a>
+                            <a href="https://nodejs.org/"><img className="home__introduction--list-element-icon-container" src="https://res.cloudinary.com/gunnerag/image/upload/f_auto/v1623576706/Node_jzpgwl.png" alt=""/></a>
                         </div>
                         &nbsp;
                         <div className="home__introduction--list-element-bar" >{node}</div>

@@ -23,28 +23,28 @@ export default function Contact() {
                 <ul className="contact__details-list">
                     <li className="contact__details-list--element">
                         <a href="https://wa.me/34698162574">
-                            <img className="contact__details-logo" src="/Whatsapp.png" alt="Whatsapp"/>
+                            <img className="contact__details-logo" src="https://res.cloudinary.com/gunnerag/image/upload/f_auto/v1623576699/whatsapp_fvvncl.png" alt="Whatsapp"/>
                         </a>
                          &nbsp;
                         <div className="contact__details-list--bold">+34 698 16 25 74</div>
                     </li>
                     <li className="contact__details-list--element">
                         <a href="https://github.com/GunnerAg">
-                            <img className="contact__details-logo" src="/GitHub.png" alt="GitHub"/>
+                            <img className="contact__details-logo" src="https://res.cloudinary.com/gunnerag/image/upload/f_auto/v1623576879/GitHub_mukrtc.png" alt="GitHub"/>
                         </a>
                         &nbsp;
                         <div className="contact__details-list--bold">GitHub</div>
                     </li>
                     <li className="contact__details-list--element">
                         <a href="https://www.linkedin.com/in/gunnerandersengil">
-                            <img className="contact__details-logo" src="/LinkedIn.png" alt="LinkedIn"/>
+                            <img className="contact__details-logo" src="https://res.cloudinary.com/gunnerag/image/upload/f_auto/v1623576698/LinkedIn_n4qnvz.png" alt="LinkedIn"/>
                         </a>
                         &nbsp;
                         <div className="contact__details-list--bold">LinkedIn</div>
                     </li>
                     <li className="contact__details-list--element">
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=@gunner.andersen.gil@gmail.com">
-                            <img className="contact__details-logo" src="/gmail.png" alt="Gmail"/>
+                            <img className="contact__details-logo" src="https://res.cloudinary.com/gunnerag/image/upload/f_auto/v1623576697/gmail_ijo9wd.png" alt="Gmail"/>
                         </a>
                         &nbsp;
                         <div className="contact__details-list--bold">@gunner.andersen.gil@gmail.com</div>
