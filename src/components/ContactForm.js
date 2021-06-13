@@ -52,9 +52,7 @@ export default function ContactForm({sendStatus,setFormStatus}) {
     ){
       emailjs.sendForm(serviceId, templateId, e.target, userId)
       .then((result) => {
-          console.log(result.text);
       }, (error) => {
-          console.log(error.text);
       });
       setFormStatus(sendStatus=true);
     }

@@ -1,6 +1,10 @@
-import React,{useState} from 'react';
+import React,{lazy,Suspense,useState} from 'react';
 import ContactForm from './ContactForm';
-import '../styles/Contact.scss'
+import '../styles/Contact.scss';
+import Spinner from 'react-bootstrap/Spinner';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+const NavBar2 = lazy(()=> import('./NavBar2.js'));
 
 export default function Contact() {
 
@@ -8,6 +12,9 @@ export default function Contact() {
 
     return (
         <>
+        <Suspense fallback={<div className="home--loading">LOADING<Spinner animation="border" variant="light"  role="status" style={{fontSize:'16px'}}/></div>}>
+            <NavBar2/>
+        </Suspense>
         <div className="contact__middle-bar"></div>
         <div className="contact">
         <div className="contact__inner-content">

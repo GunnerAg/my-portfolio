@@ -1,7 +1,10 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect,lazy,Suspense} from 'react'
 import Spinner from 'react-bootstrap/Spinner'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../styles/Projects.scss'
+import '../styles/Projects.scss';
+
+const NavBar2 = lazy(()=> import('./NavBar2.js'));
+
 
 const IMAGES = [
     {
@@ -60,7 +63,6 @@ export default function Projects() {
 
     const handleClicked=(e)=>{
         if(hover[e.currentTarget.id]===false){
-            console.log('HERE',hover)
             const hoverClone={...hover}
             delete hoverClone[e.currentTarget.id]
             let updatedState={};
@@ -68,7 +70,6 @@ export default function Projects() {
             setHover(hover={...hoverClone,...updatedState})
         }
         else if(hover[e.currentTarget.id]===true){
-            console.log('THERE',hover)
             const hoverClone={...hover}
             delete hoverClone[e.currentTarget.id]
             let updatedState={};
@@ -78,7 +79,6 @@ export default function Projects() {
     }
 
     const handleMouseIn=(e)=>{
-        console.log('MOUSE EVENT')
         const hoverClone={...hover}
         delete hoverClone[e.currentTarget.id]
         let updatedState={};
@@ -87,7 +87,6 @@ export default function Projects() {
     }
 
     const handleMouseOut =(e)=>{
-        console.log('MOUSE EVENT')
         const hoverClone={...hover}
         delete hoverClone[e.currentTarget.id]
         let updatedState={};
@@ -205,16 +204,16 @@ export default function Projects() {
     return (
         <>
         {imgsLoaded ?
-        
-        
-        <div className="projects__main--background">
-            <div className="projects__main--container">
-                {/* <div className="projects__header"> 
-                    <h5 className="projects__header-content">Projects</h5>
-                </div> */}
+        <>
+            <Suspense fallback={<div className="home--loading">LOADING<Spinner animation="border" variant="light"  role="status" style={{fontSize:'16px'}}/></div>}>
+                <NavBar2/>
+            </Suspense>
+            <div className="projects__main--background">
+                <div className="projects__main--container">
+                </div>
+                <ProjectsGrid/>
             </div>
-            <ProjectsGrid/>
-        </div>:
+        </>:
         <div className="projects--loading">
         LOADING PROJECTS
         <Spinner animation="border" variant="light"  role="status" style={{fontSize:'16px'}}/>

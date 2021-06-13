@@ -1,47 +1,50 @@
-import React from 'react';
-import {Route, Switch, withRouter} from 'react-router-dom';
+import React,{lazy,Suspense} from 'react';
+import {Route, Switch, BrowserRouter} from 'react-router-dom';
 import Home from './components/Home';
-import Projects from './components/Projects';
-import About from './components/About';
-import Contact from './components/Contact';
-import NavBar2 from './components/NavBar2';
+import Spinner from 'react-bootstrap/Spinner'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
+const Projects = lazy(()=> import('./components/Projects'));
+const About = lazy(()=> import('./components/About'));
+const Contact = lazy(()=> import( './components/Contact'));
 
 
 function App() {
 
+
   return (
-    <div className="App">
-    {window.location.pathname==='/'?null:<NavBar2/>}
-      <Switch>
-        <Route exact path="/" render={()=>{
-          return(
-              <Home/>
-            )
-        }}/>
+      <Suspense fallback={<div className="home--loading">LOADING<Spinner animation="border" variant="light"  role="status" style={{fontSize:'16px'}}/></div>}>
+      <div className="App">
+        <BrowserRouter>
+        <Switch>
+            <Route exact path="/" render={()=>{
+              return(
+                  <Home/>
+                )
+            }}/>
 
-        <Route exact path="/projects" render={()=>{
-            return(
-              <Projects/>
-            )
-        }}/>
+            <Route exact path="/projects" render={()=>{
+                return(
+                  <Projects/>
+                )
+            }}/>
 
-        <Route exact path="/about" render={()=>{
-             return(
-              <About/>
-            )
-        }}/>
+            <Route exact path="/about" render={()=>{
+                return(
+                  <About/>
+                )
+            }}/>
 
-        <Route exact path="/contact" render={()=>{
-             return(
-              <Contact/>
-            )
-        }}/>
-
-      </Switch>
-
-    </div>
+            <Route exact path="/contact" render={()=>{
+                return(
+                  <Contact/>
+                )
+            }}/>
+        </Switch>
+        </BrowserRouter>
+        </div>
+      </Suspense>
   );
 }
 
-export default  withRouter(App);
+export default App;

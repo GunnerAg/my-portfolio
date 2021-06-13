@@ -51,12 +51,6 @@ export default function Home() {
         let reactArr=Array.from('ReactJS');
         let nodeArr=Array.from('NodeJS');
 
-        console.log('INTRO',introductionArr.length)
-        console.log('INTRO2',introduction2Arr.length)
-        console.log('MONGO',mongoArr.length)
-        console.log('EXPRESS',expressArr.length)
-        console.log('REACT',reactArr.length)
-        console.log('NODE',nodeArr.length)
 
         const changeTxt0=(i)=>{
             // eslint-disable-next-line react-hooks/exhaustive-deps

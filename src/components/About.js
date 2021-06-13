@@ -1,7 +1,11 @@
-import React from 'react';
+import React,{lazy,Suspense} from 'react';
 import '../styles/About.scss'
+import Spinner from 'react-bootstrap/Spinner'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { Document, Page, pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+const NavBar2 = lazy(()=> import('./NavBar2.js'));
 
 
 export default function About() {
@@ -15,6 +19,10 @@ export default function About() {
  
   
     return (
+        <>
+        <Suspense fallback={<div className="home--loading">LOADING<Spinner animation="border" variant="light"  role="status" style={{fontSize:'16px'}}/></div>}>
+            <NavBar2/>
+        </Suspense>
         <div className="about__main--container">
             <div className="about__content-container">
                 <Document renderMode="canvas" className="about--pdf-container" file={process.env.PUBLIC_URL + '/myCV.pdf'} >
@@ -39,5 +47,6 @@ export default function About() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
