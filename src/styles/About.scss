@@ -12,7 +12,7 @@
     -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
     box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
     border-radius: 25px;
-    height: 80%;
+    height: 81%;
     overflow: hidden;
     background-color: white;
 }
@@ -41,6 +41,7 @@
     background-color: white;
 }
 
+
 .about--info-container{
     -webkit-box-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.4);  
     -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
@@ -48,13 +49,12 @@
     border-radius: 25px;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 100px;
+    margin-top: 6%;
     display: flex;
     flex-direction: column;
     width: 100%;
     height: fit-content;
     background-color: white;
-
 }
 
 .about--info-header{
@@ -62,8 +62,9 @@
     font-size: calc(16px + 1vw);
     font-weight: 900;
     width: 100%;
-    margin-top: 50px;
+    margin-top: calc(-45px - 0.5vw);
     text-align: center;
+    color: whitesmoke
 }
 
 .about--info-text{
@@ -80,6 +81,13 @@
     font-weight: 900;
 }
 
+.about--unorder-list{
+    font-weight: 900;
+}
+
+.about--unorder-list-element{
+    margin-left: 10%;
+}
 
 @media  screen and (max-width:1400px) {
 
@@ -97,7 +105,9 @@
     .about--info-container{
         width: 90%;
         margin-bottom: 10%;
+        margin-top: 20%;
     }
+
     .about--pdf-page{
         height: 80%;
         overflow: hidden;
