@@ -109,8 +109,8 @@ export default function Projects() {
                         <div className="projects__grid--unit slcocilux hover white" style={{backgroundImage:`url(${IMAGES[0].url})`}}></div>
                         <div className="projects__grid--unit-description white">SL Cocilux is a kitchen design company based in Madrid, their web displays their catalog. It is build on ReactJS.
                         <br></br>
-                        <a href="https://slcocilux.com/" className="projects__grid--unit-link white">WEBSITE</a>
-                        <a href="https://github.com/GunnerAg/CociLux" className="projects__grid--unit-link white">GITHUB REPO</a>
+                        <a href="https://slcocilux.com/" className="projects__grid--unit-link white" target="_blank">WEBSITE</a>
+                        <a href="https://github.com/GunnerAg/CociLux" className="projects__grid--unit-link white" target="_blank">GITHUB REPO</a>
                         </div>
                         
                     </div>
@@ -136,8 +136,8 @@ export default function Projects() {
                         <div className="projects__grid--unit-description white">This is a simple example of a NFT ethereum token minting app, it works with metamask and ganache on localhost.
                         It was done using ReactJS, Solidity and Web3.
                         <br></br>
-                        <a href="https://nft-erc-721.netlify.app/" className="projects__grid--unit-link white">WEBSITE</a>
-                        <a href="https://github.com/GunnerAg/ERC721" className="projects__grid--unit-link white">GITHUB REPO</a>
+                        <a href="https://nft-erc-721.netlify.app/" className="projects__grid--unit-link white" target="_blank">WEBSITE</a>
+                        <a href="https://github.com/GunnerAg/ERC721" className="projects__grid--unit-link white" target="_blank">GITHUB REPO</a>
                         </div>
                         
                     </div>
@@ -160,8 +160,8 @@ export default function Projects() {
                         <div className="projects__grid--unit theVault hover white" style={{backgroundImage:`url(${IMAGES[2].url})`}}></div>
                         <div className="projects__grid--unit-description white">The Vault is a social network to share knowladge, find people by affinity, create and see events, as well as  share/store related docs! It is build on ReactJS, NodeJS and MongoDB.
                         <br></br>
-                        <a href="https://the-vault-project.herokuapp.com/" className="projects__grid--unit-link white">WEBSITE</a>
-                        <a href="https://github.com/GunnerAg/The-Vault-Project-" className="projects__grid--unit-link white">GITHUB REPO</a>
+                        <a href="https://the-vault-project.herokuapp.com/" className="projects__grid--unit-link white" target="_blank">WEBSITE</a>
+                        <a href="https://github.com/GunnerAg/The-Vault-Project-" className="projects__grid--unit-link white" target="_blank">GITHUB REPO</a>
                         </div>
                         
                     </div>:
@@ -184,8 +184,8 @@ export default function Projects() {
                     <div className="projects__grid--unit jobber hover white" style={window.innerWidth>=600?{backgroundImage:`url(${IMAGES[3].url})`}:{backgroundImage:`url(${IMAGES[4].url})`}}></div>
                         <div className="projects__grid--unit-description white">Jobber is a minimalist job search engine for companies and employees done with Handlebars, NodeJS and MongoDB. 
                         <br></br>
-                        <a href="https://j0bber.herokuapp.com/" className="projects__grid--unit-link white">WEBSITE</a>
-                        <a href="https://github.com/GunnerAg/Jobber-JobSearchEngine." className="projects__grid--unit-link white">GITHUB REPO</a>
+                        <a href="https://j0bber.herokuapp.com/" className="projects__grid--unit-link white" target="_blank">WEBSITE</a>
+                        <a href="https://github.com/GunnerAg/Jobber-JobSearchEngine." className="projects__grid--unit-link white" target="_blank">GITHUB REPO</a>
                         </div>
                     
                     </div>:
