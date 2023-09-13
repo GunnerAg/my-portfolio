@@ -19,7 +19,7 @@ export default function Contact() {
         <div className="contact">
         <div className="contact__inner-content">
             <div className="contact__details">
-                <p className="contact__details-paragraph--one">You can find links to my networks bellow, or just send me an email and I would replay as soon as posible!</p>
+                <p className="contact__details-paragraph--one">You can find links to my networks below, or just send me an email and I would replay as soon as posible!</p>
                 <ul className="contact__details-list">
                     <li className="contact__details-list--element">
                         <a href="https://wa.me/34698162574">
